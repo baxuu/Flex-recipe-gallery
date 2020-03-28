@@ -1,0 +1,257 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+body {
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: white;
+}
+
+.apllepie {
+    cursor: pointer;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    letter-spacing: 2px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 5rem;
+    transition: .3s;
+    transition-delay: .2s;
+    z-index: 1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.hideh1 {
+    opacity: 0;
+}
+
+.gallery-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+.panel {
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    transition: .7s;
+    background-size: cover;
+    background-position: center;
+}
+
+.panel div {
+    flex: 1;
+    transition: .3s linear 0s;
+}
+
+.panel div:nth-of-type(2) {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    font-weight: bold;
+}
+
+.panel div:nth-of-type(2) p {
+    height: 10%;
+    cursor: pointer;
+
+
+}
+
+.panel div:first-child {
+    transform: translateY(-100%);
+    color: black;
+}
+
+.panel div:last-child {
+    color: black;
+    transform: translateY(100%);
+}
+
+.ingredientsTitle {
+    display: block;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.filling,
+.pie {
+    display: flex;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    padding-left: 100px;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.pie {
+    margin-top: 50px;
+}
+
+ul {
+    padding-left: 100px;
+    flex-direction: column;
+    display: none;
+    text-align: justify;
+    list-style-type: none;
+}
+
+li {
+    font-size: 18px;
+}
+
+.panel-2 div:first-child,
+.panel-3 div:first-child,
+.panel-4 div:first-child,
+.panel-5 div:first-child,
+.panel-6 div:first-child,
+.panel-2 div:last-child,
+.panel-3 div:last-child,
+.panel-4 div:last-child,
+.panel-5 div:last-child,
+.panel-6 div:last-child {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel-2p1,
+.panel-2p2,
+.panel-3p1,
+.panel-3p2,
+.panel-4p1,
+.panel-4p2,
+.panel-5p1,
+.panel-5p2,
+.panel-6p1,
+.panel-6p2 {
+    margin: 0 100px;
+    text-transform: none;
+    display: none;
+    padding: 30px;
+    font-size: 22px;
+    background-color: rgba(8, 1, 1, 0.4);
+    backdrop-filter: blur(2px);
+}
+
+.panel div ul li i {
+    font-size: 14px;
+    vertical-align: middle
+}
+
+.changed .panel-2p1,
+.changed .panel-2p2,
+.changed .panel-3p1,
+.changed .panel-3p2,
+.changed .panel-4p1,
+.changed .panel-4p2,
+.changed .panel-5p1,
+.changed .panel-5p2,
+.changed .panel-6p1,
+.changed .panel-6p2 {
+    display: block
+}
+
+.changed li {
+    font-size: 30px;
+}
+
+.changed ul {
+    display: flex;
+}
+
+.changed.panel {
+    flex: 6;
+}
+
+.panel.changed div:nth-of-type(2) {
+    display: none;
+    flex: 0;
+}
+
+.panel.changed div:first-child,
+.panel.changed div:last-child {
+    transform: translateY(0);
+    transition: .3s .4s;
+}
+
+/* Photo Designed by Freepik*/
+.panel-1 {
+    opacity: 0.9;
+    background-image: url(photos/ingredients.jpg);
+}
+
+.changed.panel-1 {
+    opacity: 1;
+}
+
+/* Photo by Gary Moreton-jones on Unsplash */
+.panel-2 {
+    opacity: 0.9;
+    background-image: url(photos/apples.jpg);
+}
+
+.panel-2.changed {
+    opacity: 1;
+}
+
+/* Photo by Jordane Mathieu on Unsplash */
+.panel-3 {
+    background-image: url(photos/baker.jpg);
+    opacity: 0.9;
+}
+
+.panel-3.changed {
+    opacity: 1;
+}
+
+/* Photo by Oleg Magni from Pexels */
+.panel-4 {
+    background-image: url(photos/pastry.jpg);
+    opacity: 0.9;
+}
+
+.changed.panel-4 {
+    opacity: 1;
+}
+
+/* Photo by Danil Aksenov on Unsplash */
+.panel-5 {
+    background-image: url(photos/top.jpg);
+    opacity: 0.9;
+}
+
+.changed.panel-5 {
+    opacity: 1;
+}
+
+.panel-6 {
+    background-image: url(photos/baking.jpg);
+    opacity: 0.9;
+}
+
+.panel-6.changed {
+    opacity: 1;
+}
