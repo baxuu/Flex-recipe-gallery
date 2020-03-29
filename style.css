@@ -200,7 +200,7 @@ li {
 /* Photo Designed by Freepik*/
 .panel-1 {
     opacity: 0.9;
-    background-image: url(photos/ingredients.jpg);
+    background-image: url(photos/ingredientsmin.jpg);
 }
 
 .changed.panel-1 {
@@ -210,7 +210,7 @@ li {
 /* Photo by Gary Moreton-jones on Unsplash */
 .panel-2 {
     opacity: 0.9;
-    background-image: url(photos/apples.jpg);
+    background-image: url(photos/applesmin.jpg);
 }
 
 .panel-2.changed {
@@ -219,7 +219,7 @@ li {
 
 /* Photo by Jordane Mathieu on Unsplash */
 .panel-3 {
-    background-image: url(photos/baker.jpg);
+    background-image: url(photos/bakermin.jpg);
     opacity: 0.9;
 }
 
@@ -229,7 +229,7 @@ li {
 
 /* Photo by Oleg Magni from Pexels */
 .panel-4 {
-    background-image: url(photos/pastry.jpg);
+    background-image: url(photos/pastrymin.jpg);
     opacity: 0.9;
 }
 
@@ -239,7 +239,7 @@ li {
 
 /* Photo by Danil Aksenov on Unsplash */
 .panel-5 {
-    background-image: url(photos/top.jpg);
+    background-image: url(photos/topmin.jpg);
     opacity: 0.9;
 }
 
@@ -248,7 +248,7 @@ li {
 }
 
 .panel-6 {
-    background-image: url(photos/baking.jpg);
+    background-image: url(photos/bakingmin.jpg);
     opacity: 0.9;
 }
 
