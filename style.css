@@ -255,3 +255,55 @@ li {
 .panel-6.changed {
     opacity: 1;
 }
+
+@media only screen and (max-width: 900px) {
+
+    .changed li {
+        font-size: 10px;
+    }
+
+    .panel div ul li i {
+        font-size: 10px;
+    }
+
+    .panel-2p1,
+    .panel-2p2,
+    .panel-3p1,
+    .panel-3p2,
+    .panel-4p1,
+    .panel-4p2,
+    .panel-5p1,
+    .panel-5p2,
+    .panel-6p1,
+    .panel-6p2 {
+        margin: 0;
+        padding: 0;
+        font-size: 9px;
+    }
+
+    li {
+        font-size: 9px;
+    }
+
+    .ingredientsTitle {
+        font-size: 20px;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    .filling,
+    .pie {
+        padding: 0;
+        font-size: 20px;
+    }
+
+    .panel div:nth-of-type(2) {
+        font-size: 15px;
+    }
+
+    .apllepie {
+        font-size: 1rem;
+    }
+}
